@@ -1,0 +1,12 @@
+basic.forever(function () {
+    music.play(music.stringPlayable("E B C5 A B G A F ", 120), music.PlaybackMode.InBackground)
+    basic.showString("Hello!")
+    basic.showIcon(IconNames.Heart)
+    basic.pause(200)
+    basic.showIcon(IconNames.SmallHeart)
+    basic.pause(200)
+    basic.showString("I love you ")
+    basic.showIcon(IconNames.Heart)
+    servos.P0.setAngle(90)
+    servos.P0.setAngle(180)
+})
